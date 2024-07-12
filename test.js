@@ -15,10 +15,15 @@ var address = {
 				"street_number":"",
 				"direction":""
 			};
+var location = {
+				"lng":119.77862181481463,
+				"lat":32.977030871550597
+			},
 var body = $response.body;
 var bodyJson = JSON.parse(body);
 var result = bodyJson.data.result;
 result.formatted_address = "china";
 result.business = "test";
 result.addressComponent = address;
+result.location = location;
 $done({ JSON.stringify(bodyJson) });
