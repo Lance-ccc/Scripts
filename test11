@@ -1,0 +1,42 @@
+var address = {
+	"data":{
+		"result":{
+			"formatted_address":"美国",
+			"business":"美国,美国,美国",
+			"sematic_description":"",
+			"cityCode":315,
+			"roads":[],
+			"formatted_address_poi":"",
+			"location":{
+				"lng":118.77862181481463,
+				"lat":31.977030871550597
+			},
+			"edz":{
+				"name":""
+			},
+			"poiRegions":[],
+			"pois":[],
+			"addressComponent":{
+				"city_level":2,
+				"country":"美国",
+				"town":"美国",
+				"distance":"",
+				"city":"美国",
+				"adcode":"320114",
+				"country_code_iso":"CHN",
+				"country_code_iso2":"CN",
+				"country_code":0,
+				"town_code":"320114006",
+				"province":"美国",
+				"street":"美国",
+				"district":"美国",
+				"street_number":"",
+				"direction":""
+			}
+		},
+		"status":0
+	},
+	"resultCode":"000000",
+	"resultMessage":"OK"
+};
+$done({ JSON.stringify(address) });
