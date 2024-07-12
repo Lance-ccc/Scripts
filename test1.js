@@ -39,4 +39,4 @@ var address = {
 	"resultCode":"000000",
 	"resultMessage":"OK"
 };
-$done({"data":address.data});
+$done(address);
