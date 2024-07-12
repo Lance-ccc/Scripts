@@ -39,5 +39,4 @@ var address = {
 	"resultCode":"000000",
 	"resultMessage":"OK"
 };
-console.log(address);
-$done({JSON.stringify(address)});
+$done({"data":address.data});
