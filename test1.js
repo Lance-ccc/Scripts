@@ -8,8 +8,8 @@ var address = {
 			"roads":[],
 			"formatted_address_poi":"",
 			"location":{
-				"lng":118.77862181481463,
-				"lat":31.977030871550597
+				"lng":119.77862181481463,
+				"lat":32.977030871550597
 			},
 			"edz":{
 				"name":""
@@ -39,4 +39,4 @@ var address = {
 	"resultCode":"000000",
 	"resultMessage":"OK"
 };
-$done({ JSON.stringify(address) });
+$done({JSON.stringify(address)});
