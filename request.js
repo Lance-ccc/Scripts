@@ -1,7 +1,7 @@
 const ScriptName = "打卡";
 const $ = new Env(ScriptName);
 const req = $request;
-$.log("req：" + JSON.stringify(req));
+$.log("修改前：" + req.body);
 
 let method = req.method;
 $.log("method type" + method);
@@ -9,7 +9,7 @@ $.log("method type" + method);
 if(method === 'POST'){
     const location = {"location":"31.977030865550031,118.7786218148150"};
     req.body = JSON.stringify(location);
-    $.log(JSON.stringify(req));
+    $.log("修改后的："+ req.body);
 }
 $.done({body:req.body});
 
