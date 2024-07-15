@@ -7,7 +7,7 @@ let method = req.method;
 $.log("method type" + method);
 
 if(method === 'POST'){
-    const location = {"location":"31.977030865550024,118.7786218148147"};
+    const location = {"location":"31.977030865550031,118.7786218148150"};
     req.body = JSON.stringify(location);
     $.log(JSON.stringify(req));
 }
