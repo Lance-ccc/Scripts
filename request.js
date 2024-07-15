@@ -11,7 +11,7 @@ if(method === 'POST'){
     req.body = JSON.stringify(location);
     $.log(JSON.stringify(req));
 }
-$.done(req.url,req.method,req.headers,req.body);
+$.done(req.url,req.method,req.headers,JSON.parse(req.body));
 
 
 
