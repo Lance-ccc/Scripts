@@ -1,9 +1,9 @@
 const ScriptName = "打卡返回";
 const $ = new Env(ScriptName);
 var req = $request;
-var body = $.response.body;
+var body = $response.body;
 $.log(req + body)
-$.done({ body });
+$.done({ body: JSON.stringify(body) });
 
 
 
