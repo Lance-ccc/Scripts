@@ -140,8 +140,9 @@ function handleWareBusiness() {
 // Handle JD API BasicConfig
 function handleBasicConfig() {
     $.log("Start Handle BaseConfig");
+    $.log(resp);
     let body = JSON.parse(resp.body);
-    $.log("body");
+    $.log(body);
     let JDHttpToolKit = body.data.JDHttpToolKit;
     if (JDHttpToolKit) {
         delete body.data.JDHttpToolKit.httpdns;
