@@ -1,6 +1,7 @@
 const ScriptName = "打卡";
 const $ = new Env(ScriptName);
 const req = $request;
+$.log("req：" + JSON.stringify(req));
 
 let method = req.method;
 $.log("method type" + method);
@@ -12,7 +13,7 @@ if(method === 'POST'){
 }
 $.log("req：" + JSON.stringify(req));
 
-$.done(req);
+$.done(req.url, req.method, req.headers, req.body);
 
 
 
