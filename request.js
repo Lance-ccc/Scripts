@@ -11,8 +11,7 @@ if(method === 'POST'){
     body.location = "32.977030865550024,128.7786218148147";
     $.log(JSON.stringify(req));
 }
-
-$.done(req);
+$.done(req.url,req.method,req.headers,req.body);
 
 
 
