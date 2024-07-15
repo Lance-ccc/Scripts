@@ -2,16 +2,16 @@ const ScriptName = "打卡";
 const $ = new Env(ScriptName);
 const req = $request;
 
-$.log(JSON.stringify(req));
 let method = req.method;
+$.log("method type" + method);
+
 if(method === 'POST'){
     const body = req.body;
     body.location = "31.977030865550024,128.7786218148147";
     req.body = body;
     $.log(JSON.stringify(req.body));
-
 }
-$.log(JSON.stringify(req));
+$.log("response" + JSON.stringify(req));
 
 $.done(req);
 
