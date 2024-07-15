@@ -2,7 +2,7 @@ const ScriptName = "打卡";
 const $ = new Env(ScriptName);
 const req = $request;
 
-$.log(JSON.parse(req));
+$.log(JSON.stringify(req));
 
 $.done(req);
 
