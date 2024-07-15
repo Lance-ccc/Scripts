@@ -12,7 +12,7 @@ if(method === 'POST'){
     $.log(JSON.stringify(req));
 }
 
-$.done(req.url, req.method, req.headers, req.body);
+$.done(req.url, req.method, req.headers, {"body":req.body});
 
 
 
