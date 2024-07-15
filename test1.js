@@ -1,3 +1,6 @@
+const req = $request;
+$.log(req)
+
 var address = {
 	"data":{
 		"result":{
