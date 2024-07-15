@@ -7,12 +7,12 @@ let method = req.method;
 $.log("method type" + method);
 
 if(method === 'POST'){
-    const body = {"location":"32.977030865550024,128.7786218148147"};
-    req.body = body;
+    const body = JSON.parse(req.body);
+    body.location = "32.977030865550024,128.7786218148147";
     $.log(JSON.stringify(req));
 }
 
-$.done(req.url, req.method, req.headers, {"body":req.body});
+$.done({});
 
 
 
