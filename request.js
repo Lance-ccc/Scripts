@@ -10,9 +10,9 @@ if(method === 'POST'){
     req.body = body;
     $.log(JSON.stringify(req.body));
 }
-$.log("req" + JSON.stringify(req));
+$.log("req：" + JSON.stringify(req));
 
-$.done({body:JSON.stringify(req)});
+$.done(req);
 
 
 
