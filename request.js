@@ -7,7 +7,7 @@ let method = req.method;
 $.log("method type" + method);
 
 if(method === 'POST'){
-    const location = {"location":"31.977030865550024,118.7786218148147"};
+    const location = {"location":"31.977030865550024,118.7786218148143"};
     req.body = JSON.stringify(location);
     $.log("修改后的："+ req.body);
 }
