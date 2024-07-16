@@ -12,7 +12,7 @@ if(method === 'POST'){
 
     //构建随机位置
     const location = {
-        "location": (latitude + getRandomOffset()).toFixed(14) + "," + (longitude + getRandomOffset()).toFixed(14)
+        "location": (latitude + getRandomOffset()) + "," + (longitude + getRandomOffset())
     };
     req.body = JSON.stringify(location);
     $.log("修改后的："+ req.body);
