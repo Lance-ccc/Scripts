@@ -1,4 +1,4 @@
-const ScriptName = "打卡";
+const ScriptName = "magicReq";
 const $ = new Env(ScriptName);
 const req = $request;
 $.log("修改前：" + req.body);
