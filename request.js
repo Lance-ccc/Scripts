@@ -7,8 +7,8 @@ let method = req.method;
 $.log("method type" + method);
 
 if(method === 'POST'){
-    let latitude = '31.976';
-    let longitude = '118.778';
+    let latitude = 31.976;
+    let longitude = 118.778;
 
     // 生成范围在 -0.001 到 0.001 之间的随机偏移量
     function getRandomOffset() {
